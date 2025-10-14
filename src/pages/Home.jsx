@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from '../components/CommonComponents/Navbar';
 
-const Home = ({ onNavigate }) => {
+const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar onNavigate={onNavigate} />
+      <Navbar />
       <main>
         {/* Homepage content will be added here */}
         <section className="py-20">

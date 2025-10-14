@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from '../components/CommonComponents/Navbar';
 
-const Contact = ({ onNavigate }) => {
+const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar onNavigate={onNavigate} />
+      <Navbar />
       <main>
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 text-center">

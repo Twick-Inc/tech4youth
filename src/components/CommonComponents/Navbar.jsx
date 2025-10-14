@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Search,
   Menu,
@@ -9,9 +10,9 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
-import youthTechLogo from "../assets/youth-tech-logo.png";
+import youthTechLogo from "../../assets/youth-tech-logo.png";
 
-const NavigationBar = ({ onNavigate }) => {
+const NavigationBar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -133,42 +134,42 @@ const NavigationBar = ({ onNavigate }) => {
             <div className="flex items-center justify-between">
               {/* Desktop Navigation Links */}
               <div className="hidden lg:flex items-center space-x-8">
-                <button
-                  onClick={() => onNavigate && onNavigate('home')}
+                <Link
+                  to="/"
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   Home
-                </button>
-                <button
-                  onClick={() => onNavigate && onNavigate('about')}
+                </Link>
+                <Link
+                  to="/about"
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   About
-                </button>
-                <button
-                  onClick={() => onNavigate && onNavigate('programs')}
+                </Link>
+                <Link
+                  to="/programs"
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   Programs
-                </button>
-                <button
-                  onClick={() => onNavigate && onNavigate('team')}
+                </Link>
+                <Link
+                  to="/team"
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   Team
-                </button>
-                <button
-                  onClick={() => onNavigate && onNavigate('blog')}
+                </Link>
+                <Link
+                  to="/blog"
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   Blog
-                </button>
-                <button
-                  onClick={() => onNavigate && onNavigate('contact')}
+                </Link>
+                <Link
+                  to="/contact"
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   Contact
-                </button>
+                </Link>
               </div>
 
               {/* Mobile Logo (visible when scrolled) */}
@@ -215,60 +216,48 @@ const NavigationBar = ({ onNavigate }) => {
             {mobileMenuOpen && (
               <div className="lg:hidden mt-4 pt-4 border-t" style={{borderColor: '#2f868f'}}>
                 <div className="space-y-3">
-                  <button
-                    onClick={() => {
-                      onNavigate && onNavigate('home');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
+                  <Link
+                    to="/"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium"
                   >
                     Home
-                  </button>
-                  <button
-                    onClick={() => {
-                      onNavigate && onNavigate('about');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
+                  </Link>
+                  <Link
+                    to="/about"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium"
                   >
                     About
-                  </button>
-                  <button
-                    onClick={() => {
-                      onNavigate && onNavigate('programs');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
+                  </Link>
+                  <Link
+                    to="/programs"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium"
                   >
                     Programs
-                  </button>
-                  <button
-                    onClick={() => {
-                      onNavigate && onNavigate('team');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
+                  </Link>
+                  <Link
+                    to="/team"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium"
                   >
                     Team
-                  </button>
-                  <button
-                    onClick={() => {
-                      onNavigate && onNavigate('blog');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
+                  </Link>
+                  <Link
+                    to="/blog"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium"
                   >
                     Blog
-                  </button>
-                  <button
-                    onClick={() => {
-                      onNavigate && onNavigate('contact');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
+                  </Link>
+                  <Link
+                    to="/contact"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium"
                   >
                     Contact
-                  </button>
+                  </Link>
                   <button className="w-full md:hidden flex items-center justify-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2.5 rounded-full transition-colors font-semibold mt-4">
                     Donate Now
                   </button>

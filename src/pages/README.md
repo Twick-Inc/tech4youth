@@ -1,6 +1,6 @@
 # Pages Organization Guide
 
-This guide explains how pages are organized in the YouthTech project and how to create new pages.
+This guide explains how pages are organized in the YouthTech website project developed by TwickLink and how to create new pages for the TwickLink development team.
 
 ## 📁 Pages Structure
 
@@ -277,4 +277,4 @@ const App = () => {
 
 ---
 
-**Remember**: Pages are the main entry points that combine multiple components into complete user experiences.
+**TwickLink Development Note**: Pages are the main entry points that combine multiple components into complete user experiences. Follow TwickLink's development standards and internal guidelines when creating new pages.

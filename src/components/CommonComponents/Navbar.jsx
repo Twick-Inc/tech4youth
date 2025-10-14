@@ -9,7 +9,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
-import youthTechLogo from "../assets/youth-tech-logo.png";
+import youthTechLogo from "../../assets/youth-tech-logo.png";
 
 const NavigationBar = ({ onNavigate }) => {
   const [scrolled, setScrolled] = useState(false);

@@ -1,4 +1,4 @@
-# YouthTech - Empowering Tanzania Through Technology
+# YouthTech Website - Developed by TwickLink
 
 <div align="center">
   <img src="src/assets/youth-tech-logo.png" alt="YouthTech Logo" width="200" height="200">
@@ -6,6 +6,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![React](https://img.shields.io/badge/React-18.0+-blue.svg)](https://reactjs.org/)
   [![Vite](https://img.shields.io/badge/Vite-5.0+-purple.svg)](https://vitejs.dev/)
+  [![Developed by TwickLink](https://img.shields.io/badge/Developed%20by-TwickLink-green.svg)](https://twicklink.com)
 </div>
 
 ## 🌟 About YouthTech
@@ -48,13 +49,14 @@ To promote technology adoption within the community, empowering individuals thro
 
 ## 🛠️ Technology Stack
 
-This project is built with modern web technologies:
+This website is developed by **TwickLink** using modern web technologies:
 
 - **Frontend**: React 18+ with Vite
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 - **Build Tool**: Vite
 - **Package Manager**: npm
+- **Development Team**: TwickLink
 
 ## 🚀 Getting Started
 
@@ -108,15 +110,9 @@ tech4youth/
 - **Accessibility**: WCAG compliant design patterns
 - **Performance**: Optimized with Vite for fast development and builds
 
-## 🤝 Contributing
+## 👨‍💻 Development Team
 
-We welcome contributions from the community! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+This project is exclusively developed by **TwickLink**, a professional web development company contracted by YouthTech.
 
 ### Development Guidelines
 
@@ -125,12 +121,19 @@ We welcome contributions from the community! Please follow these steps:
 - Ensure responsive design
 - Test across different browsers
 - Maintain accessibility standards
+- TwickLink internal development standards
 
 ## 📞 Contact Information
 
+### YouthTech Organization
 - **Visit Us**: Kilimanjaro Region, Tanzania
 - **Talk to Us**: +255 764 454 097
 - **Write to Us**: info@youthtech.or.tz
+
+### TwickLink Development Team
+- **Website**: [twicklink.com](https://twicklink.com)
+- **Development**: Professional web development services
+- **Project**: YouthTech website development contract
 
 ## 🌐 Social Media
 
@@ -148,14 +151,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
+- YouthTech organization for the development contract
 - Tanzanian tech community for inspiration and support
-- Open source contributors and maintainers
 - Educational institutions and partners
-- Volunteers and mentors who make our mission possible
+- Volunteers and mentors who make YouthTech's mission possible
 
 ---
 
 <div align="center">
   <p><strong>Empowering Tanzania's Future Through Technology</strong></p>
-  <p>Made with ❤️ by the YouthTech Team</p>
+  <p>Website developed with ❤️ by <strong>TwickLink</strong> for YouthTech</p>
 </div>

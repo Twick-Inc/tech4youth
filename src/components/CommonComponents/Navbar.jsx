@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import youthTechLogo from "../assets/youth-tech-logo.png";
 
-const NavigationBar = () => {
+const NavigationBar = ({ onNavigate }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -133,42 +133,42 @@ const NavigationBar = () => {
             <div className="flex items-center justify-between">
               {/* Desktop Navigation Links */}
               <div className="hidden lg:flex items-center space-x-8">
-                <a
-                  href="#"
+                <button
+                  onClick={() => onNavigate && onNavigate('home')}
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   Home
-                </a>
-                <a
-                  href="#"
+                </button>
+                <button
+                  onClick={() => onNavigate && onNavigate('about')}
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   About
-                </a>
-                <a
-                  href="#"
+                </button>
+                <button
+                  onClick={() => onNavigate && onNavigate('programs')}
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   Programs
-                </a>
-                <a
-                  href="#"
+                </button>
+                <button
+                  onClick={() => onNavigate && onNavigate('team')}
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   Team
-                </a>
-                <a
-                  href="#"
+                </button>
+                <button
+                  onClick={() => onNavigate && onNavigate('blog')}
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   Blog
-                </a>
-                <a
-                  href="#"
+                </button>
+                <button
+                  onClick={() => onNavigate && onNavigate('contact')}
                   className="text-white hover:text-yellow-400 transition-colors font-semibold"
                 >
                   Contact
-                </a>
+                </button>
               </div>
 
               {/* Mobile Logo (visible when scrolled) */}
@@ -215,42 +215,60 @@ const NavigationBar = () => {
             {mobileMenuOpen && (
               <div className="lg:hidden mt-4 pt-4 border-t" style={{borderColor: '#2f868f'}}>
                 <div className="space-y-3">
-                  <a
-                    href="#"
-                    className="block text-white hover:text-yellow-400 py-2 font-medium"
+                  <button
+                    onClick={() => {
+                      onNavigate && onNavigate('home');
+                      setMobileMenuOpen(false);
+                    }}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
                   >
                     Home
-                  </a>
-                  <a
-                    href="#"
-                    className="block text-white hover:text-yellow-400 py-2 font-medium"
+                  </button>
+                  <button
+                    onClick={() => {
+                      onNavigate && onNavigate('about');
+                      setMobileMenuOpen(false);
+                    }}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
                   >
                     About
-                  </a>
-                  <a
-                    href="#"
-                    className="block text-white hover:text-yellow-400 py-2 font-medium"
+                  </button>
+                  <button
+                    onClick={() => {
+                      onNavigate && onNavigate('programs');
+                      setMobileMenuOpen(false);
+                    }}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
                   >
                     Programs
-                  </a>
-                  <a
-                    href="#"
-                    className="block text-white hover:text-yellow-400 py-2 font-medium"
+                  </button>
+                  <button
+                    onClick={() => {
+                      onNavigate && onNavigate('team');
+                      setMobileMenuOpen(false);
+                    }}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
                   >
                     Team
-                  </a>
-                  <a
-                    href="#"
-                    className="block text-white hover:text-yellow-400 py-2 font-medium"
+                  </button>
+                  <button
+                    onClick={() => {
+                      onNavigate && onNavigate('blog');
+                      setMobileMenuOpen(false);
+                    }}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
                   >
                     Blog
-                  </a>
-                  <a
-                    href="#"
-                    className="block text-white hover:text-yellow-400 py-2 font-medium"
+                  </button>
+                  <button
+                    onClick={() => {
+                      onNavigate && onNavigate('contact');
+                      setMobileMenuOpen(false);
+                    }}
+                    className="block text-white hover:text-yellow-400 py-2 font-medium w-full text-left"
                   >
                     Contact
-                  </a>
+                  </button>
                   <button className="w-full md:hidden flex items-center justify-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2.5 rounded-full transition-colors font-semibold mt-4">
                     Donate Now
                   </button>

@@ -14,6 +14,12 @@ const HeroSection = () => {
   // Local background images from assets
   const images = [
     {
+      src: bg07,
+      alt: "Innovation Hub",
+      title: "Innovation Hub",
+      subtitle: "Where ideas come to life and technology meets creativity",
+    },
+    {
       src: bg01,
       alt: "Technology Innovation",
       title: "Empowering Tanzania Through Technology",
@@ -45,8 +51,7 @@ const HeroSection = () => {
       src: bg05,
       alt: "Future Technology",
       title: "Shaping the Future",
-      subtitle:
-        "Preparing the next generation for the digital world ahead",
+      subtitle: "Preparing the next generation for the digital world ahead",
     },
     {
       src: bg06,
@@ -54,13 +59,6 @@ const HeroSection = () => {
       title: "Continuous Learning",
       subtitle:
         "Creating opportunities for lifelong learning and professional development",
-    },
-    {
-      src: bg07,
-      alt: "Innovation Hub",
-      title: "Innovation Hub",
-      subtitle:
-        "Where ideas come to life and technology meets creativity",
     },
     {
       src: bg08,
@@ -81,7 +79,6 @@ const HeroSection = () => {
 
     return () => clearInterval(interval);
   }, [images.length]);
-
 
   return (
     <section className="relative h-screen overflow-hidden">
@@ -121,7 +118,7 @@ const HeroSection = () => {
         <div className="flex items-center gap-6">
           {/* Our Programs Button */}
           <button
-            onClick={() => window.location.href = '/programs'}
+            onClick={() => (window.location.href = "/programs")}
             className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-4 rounded-full transition-all duration-300 font-semibold text-lg hover:scale-105 shadow-lg hover:shadow-xl"
           >
             Our Programs
@@ -129,7 +126,7 @@ const HeroSection = () => {
 
           {/* Wikipedia Project Button */}
           <button
-            onClick={() => window.location.href = '/wikipedia-project'}
+            onClick={() => (window.location.href = "/wikipedia-project")}
             className="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-8 py-4 rounded-full transition-all duration-300 backdrop-blur-sm border border-white border-opacity-30 hover:scale-105 font-semibold text-lg shadow-lg hover:shadow-xl"
           >
             Wikipedia Project

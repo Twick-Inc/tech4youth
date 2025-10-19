@@ -17,13 +17,13 @@ const AboutPreview = () => {
       <div className="absolute top-20 left-10 w-40 h-40 bg-teal-100 rounded-full opacity-20 blur-2xl"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-amber-100 rounded-full opacity-20 blur-2xl"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Side - Water Drop Images */}
           <div className="relative flex justify-center lg:justify-start">
             {/* Main Image with normal shape */}
             <div className="relative z-10">
-              <div className="w-[35rem] h-[40rem] relative overflow-hidden shadow-2xl rounded-2xl">
+              <div className="w-[40rem] h-[42rem] relative overflow-hidden shadow-2xl rounded-2xl">
                 <img
                   src={mainDropImage}
                   alt="Youth Tech Mission"
@@ -32,13 +32,13 @@ const AboutPreview = () => {
               </div>
 
               {/* Small Bouncing Image */}
-              <div 
+              <div
                 className="absolute -bottom-4 -right-4"
                 style={{
-                  animation: "gentleBounce 4s ease-in-out infinite"
+                  animation: "gentleBounce 4s ease-in-out infinite",
                 }}
               >
-                <div className="w-32 h-36 relative overflow-hidden shadow-xl rounded-xl">
+                <div className="w-full h-36 relative overflow-hidden shadow-xl rounded-xl">
                   <img
                     src={smallDropImage}
                     alt="Youth Tech Impact"
@@ -46,10 +46,11 @@ const AboutPreview = () => {
                   />
                 </div>
               </div>
-              
+
               <style jsx>{`
                 @keyframes gentleBounce {
-                  0%, 100% {
+                  0%,
+                  100% {
                     transform: translateY(0px);
                   }
                   50% {
@@ -68,16 +69,16 @@ const AboutPreview = () => {
           <div className="space-y-6">
             {/* Subtitle */}
             <div className="flex items-center space-x-3">
-              <span className="text-amber-600 text-sm font-bold uppercase tracking-wider">
+              <span className="text-[#ffac00] text-sm font-bold uppercase tracking-wider">
                 About Us Youth Tech
               </span>
-              <div className="w-12 h-0.5 bg-amber-600"></div>
+              <div className="w-12 h-0.5 bg-[#ffac00]"></div>
             </div>
 
             {/* Main Title */}
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              Making A Difference,{" "}
-              <span className="text-teal-600">One Life At A Time</span>
+              Transforming Lives,{" "}
+              <span className="text-teal-600">Through Technology</span>
             </h2>
 
             {/* Paragraph - Exactly 5 lines with 5th line half */}
@@ -98,23 +99,23 @@ const AboutPreview = () => {
                   <Heart className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <p className="font-bold text-gray-800 text-sm">Be a Hero,</p>
+                  <p className="font-bold text-gray-800 text-sm">Join Us,</p>
                   <p className="font-bold text-gray-800 text-sm">
-                    Contribute Now
+                    Empower Change
                   </p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-3 p-4 bg-amber-50 rounded-xl border-2 border-amber-100 hover:border-amber-300 transition-all duration-300 hover:shadow-lg cursor-pointer group">
-                <div className="w-14 h-14 bg-amber-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 bg-[#ffac00] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <DollarSign className="w-7 h-7 text-white" />
                 </div>
                 <div>
                   <p className="font-bold text-gray-800 text-sm">
-                    Help Children
+                    Support Youth
                   </p>
                   <p className="font-bold text-gray-800 text-sm">
-                    with Donations
+                    Through Technology
                   </p>
                 </div>
               </div>
@@ -125,8 +126,11 @@ const AboutPreview = () => {
               {/* Left Column */}
               <div className="space-y-3">
                 {features.slice(0, 2).map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3 group">
-                    <div className="w-7 h-7 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                  <div
+                    key={index}
+                    className="flex items-center space-x-3 group"
+                  >
+                    <div className="w-7 h-7 bg-[#ffac00] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-md">
                       <Check className="w-4 h-4 text-white stroke-[3]" />
                     </div>
                     <span className="text-gray-700 font-medium text-base">
@@ -135,11 +139,14 @@ const AboutPreview = () => {
                   </div>
                 ))}
               </div>
-              
+
               {/* Right Column */}
               <div className="space-y-3">
                 {features.slice(2, 4).map((feature, index) => (
-                  <div key={index + 2} className="flex items-center space-x-3 group">
+                  <div
+                    key={index + 2}
+                    className="flex items-center space-x-3 group"
+                  >
                     <div className="w-7 h-7 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-md">
                       <Check className="w-4 h-4 text-white stroke-[3]" />
                     </div>

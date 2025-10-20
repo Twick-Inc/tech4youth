@@ -9,6 +9,9 @@ import SupportBanner from "../components/HomepageComponents/SupportBanner";
 import SuccessStory from "../components/HomepageComponents/SuccessStory";
 import VolunteerTeam from "../components/HomepageComponents/VolunteerTeam";
 import ImpactStats from "../components/HomepageComponents/ImpactStats";
+import PartnersSection from "../components/HomepageComponents/PartnersSection";
+import FAQSection from "../components/HomepageComponents/FAQSection";
+import TestimonialsSection from "../components/HomepageComponents/TestimonialsSection";
 
 const Home = () => {
   return (
@@ -22,6 +25,9 @@ const Home = () => {
       <SuccessStory />
       <VolunteerTeam />
       <ImpactStats />
+      <PartnersSection />
+      <TestimonialsSection />
+      <FAQSection />
       <Footer />
     </>
   );

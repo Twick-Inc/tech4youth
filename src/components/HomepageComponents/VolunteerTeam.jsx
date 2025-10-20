@@ -1,11 +1,13 @@
 import React from "react";
+import abubakariImage from "../../assets/team/Abubakari.jpg";
+import justineImage from "../../assets/team/Justine.jpg";
+import yvonneImage from "../../assets/team/Yvonne.jpg";
 
 const VolunteerTeam = () => {
   const volunteers = [
-    { name: "Joseph Alexander", role: "ICT Trainer", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" },
-    { name: "Jessica Lauren", role: "Cybersecurity Expert", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop" },
-    { name: "Daniel Thomas", role: "AI Specialist", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop" },
-    { name: "Michel Connor", role: "Programming Mentor", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop" }
+    { name: "Abubakari Sixbeth", role: "Founder & Executive Director", image: abubakariImage },
+    { name: "Justine Mahenge", role: "Co-Founder & Technical Lead", image: justineImage },
+    { name: "Yvonne Mlowe", role: "Program Coordinator", image: yvonneImage }
   ];
 
   return (
@@ -14,20 +16,20 @@ const VolunteerTeam = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-4">
-            <div className="h-px w-16 bg-amber-500"></div>
-            <span className="mx-4 text-amber-600 font-bold text-sm uppercase tracking-wider italic">
-              Our Tech Team
+            <div className="h-px w-16 bg-youth-orange"></div>
+            <span className="mx-4 text-youth-orange font-bold text-sm uppercase tracking-wider italic">
+              Leadership Team
             </span>
-            <div className="h-px w-16 bg-amber-500"></div>
+            <div className="h-px w-16 bg-youth-orange"></div>
           </div>
           
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            Meet Our Technology Experts
+            Meet Our Leadership Team
           </h2>
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {volunteers.map((volunteer, index) => (
             <div key={index} className="relative group">
               <div 
@@ -41,7 +43,7 @@ const VolunteerTeam = () => {
                 />
                 
                 {/* Plus Button */}
-                <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-teal-700 hover:bg-teal-600 rounded-full flex items-center justify-center text-white text-2xl font-light transition-all duration-300 shadow-lg">
+                <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-youth-primary hover:bg-youth-primary-dark rounded-full flex items-center justify-center text-white text-2xl font-light transition-all duration-300 shadow-lg">
                   +
                 </button>
               </div>
@@ -57,7 +59,7 @@ const VolunteerTeam = () => {
       </div>
 
       {/* Bottom decorative wave */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-teal-800 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-youth-primary-dark to-transparent"></div>
     </section>
   );
 };

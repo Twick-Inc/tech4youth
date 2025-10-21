@@ -1,24 +1,35 @@
-import React from 'react';
-import Navbar from '../components/CommonComponents/Navbar';
+import React from "react";
+import Navbar from "../components/CommonComponents/Navbar";
+import Footer from "../components/CommonComponents/Footer";
+import HeroSection from "../components/HomepageComponents/HeroSection";
+import AboutPreview from "../components/HomepageComponents/AboutPreview";
+import ProgramsSection from "../components/HomepageComponents/TechPrograms";
+import VolunteerCTA from "../components/HomepageComponents/VolunteerCTA";
+import SupportBanner from "../components/HomepageComponents/SupportBanner";
+import SuccessStory from "../components/HomepageComponents/SuccessStory";
+import VolunteerTeam from "../components/HomepageComponents/VolunteerTeam";
+import ImpactStats from "../components/HomepageComponents/ImpactStats";
+import PartnersSection from "../components/HomepageComponents/PartnersSection";
+import FAQSection from "../components/HomepageComponents/FAQSection";
+import TestimonialsSection from "../components/HomepageComponents/TestimonialsSection";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
       <Navbar />
-      <main>
-        {/* Homepage content will be added here */}
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">
-              Welcome to YouthTech
-            </h1>
-            <p className="text-xl text-gray-600">
-              Empowering Tanzania Through Technology
-            </p>
-          </div>
-        </section>
-      </main>
-    </div>
+      <HeroSection />
+      <AboutPreview />
+      <ProgramsSection />
+      <VolunteerCTA />
+      <SupportBanner />
+      <SuccessStory />
+      <VolunteerTeam />
+      <ImpactStats />
+      <PartnersSection />
+      <TestimonialsSection />
+      <FAQSection />
+      <Footer />
+    </>
   );
 };
 

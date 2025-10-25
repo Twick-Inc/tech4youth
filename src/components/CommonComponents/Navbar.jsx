@@ -143,12 +143,34 @@ const NavigationBar = () => {
                 >
                   Programs
                 </Link>
-                <Link
-                  to="/team"
-                  className="text-white hover:text-yellow-400 transition-colors font-semibold"
-                >
-                  Team
-                </Link>
+                {/* Team Dropdown */}
+                <div className="relative group">
+                  <Link
+                    to="/team"
+                    className="text-white hover:text-yellow-400 transition-colors font-semibold flex items-center gap-1"
+                  >
+                    Team
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </Link>
+                  
+                  {/* Dropdown Menu */}
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <Link
+                      to="/team"
+                      className="block px-4 py-3 text-gray-700 hover:bg-youth-orange hover:text-white transition-colors rounded-t-lg"
+                    >
+                      Team
+                    </Link>
+                    <Link
+                      to="/team/1"
+                      className="block px-4 py-3 text-gray-700 hover:bg-youth-orange hover:text-white transition-colors rounded-b-lg"
+                    >
+                      Team Details
+                    </Link>
+                  </div>
+                </div>
                 {/* Blog Dropdown */}
                 <div className="relative group">
                   <Link

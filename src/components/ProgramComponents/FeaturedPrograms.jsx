@@ -1,6 +1,9 @@
 import { Users, FileText, Edit, ArrowRight } from "lucide-react";
+import pichaImage from "../../assets/Picha.JPG";
 
 export default function FeaturedPrograms() {
+  console.log('Picha image path:', pichaImage);
+  
   const stats = [
     {
       icon: FileText,
@@ -90,7 +93,7 @@ export default function FeaturedPrograms() {
           <div className="relative group">
             <div className="absolute -inset-4 bg-gradient-to-r from-teal-600 to-amber-500 rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
             <img
-              src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={pichaImage}
               alt="Wikipedia Project"
               className="relative rounded-2xl shadow-2xl w-full h-auto transform group-hover:scale-105 transition-transform duration-300"
             />

@@ -137,89 +137,93 @@ export default function ApplicationModal({
             </div>
           </div>
 
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              Location *
-            </label>
-            <input
-              type="text"
-              required
-              value={formData.location}
-              onChange={(e) =>
-                setFormData({ ...formData, location: e.target.value })
-              }
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
-              placeholder="City, Region"
-            />
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                Location *
+              </label>
+              <input
+                type="text"
+                required
+                value={formData.location}
+                onChange={(e) =>
+                  setFormData({ ...formData, location: e.target.value })
+                }
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+                placeholder="City, Region"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                Education Level *
+              </label>
+              <select
+                required
+                value={formData.education}
+                onChange={(e) =>
+                  setFormData({ ...formData, education: e.target.value })
+                }
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+              >
+                <option value="">Select your education level</option>
+                <option value="Primary">Primary Education</option>
+                <option value="Secondary">Secondary Education</option>
+                <option value="Certificate">Certificate</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Degree">University Degree</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
           </div>
 
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              Education Level *
-            </label>
-            <select
-              required
-              value={formData.education}
-              onChange={(e) =>
-                setFormData({ ...formData, education: e.target.value })
-              }
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
-            >
-              <option value="">Select your education level</option>
-              <option value="Primary">Primary Education</option>
-              <option value="Secondary">Secondary Education</option>
-              <option value="Certificate">Certificate</option>
-              <option value="Diploma">Diploma</option>
-              <option value="Degree">University Degree</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                Program of Interest *
+              </label>
+              <select
+                required
+                value={formData.program}
+                onChange={(e) =>
+                  setFormData({ ...formData, program: e.target.value })
+                }
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+              >
+                <option value="">Select a program</option>
+                <option value="Coding Bootcamp">Coding Bootcamp</option>
+                <option value="Digital Literacy">Digital Literacy</option>
+                <option value="Mobile App Development">
+                  Mobile App Development
+                </option>
+                <option value="Data Science and Analytics">
+                  Data Science and Analytics
+                </option>
+                <option value="Cybersecurity Basics">Cybersecurity Basics</option>
+                <option value="Tech Entrepreneurship">
+                  Tech Entrepreneurship
+                </option>
+              </select>
+            </div>
 
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              Program of Interest *
-            </label>
-            <select
-              required
-              value={formData.program}
-              onChange={(e) =>
-                setFormData({ ...formData, program: e.target.value })
-              }
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
-            >
-              <option value="">Select a program</option>
-              <option value="Coding Bootcamp">Coding Bootcamp</option>
-              <option value="Digital Literacy">Digital Literacy</option>
-              <option value="Mobile App Development">
-                Mobile App Development
-              </option>
-              <option value="Data Science and Analytics">
-                Data Science and Analytics
-              </option>
-              <option value="Cybersecurity Basics">Cybersecurity Basics</option>
-              <option value="Tech Entrepreneurship">
-                Tech Entrepreneurship
-              </option>
-            </select>
-          </div>
-
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              Previous Tech Experience
-            </label>
-            <select
-              value={formData.experience}
-              onChange={(e) =>
-                setFormData({ ...formData, experience: e.target.value })
-              }
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
-            >
-              <option value="">Select your experience level</option>
-              <option value="None">No Experience</option>
-              <option value="Beginner">Beginner</option>
-              <option value="Intermediate">Intermediate</option>
-              <option value="Advanced">Advanced</option>
-            </select>
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                Previous Tech Experience
+              </label>
+              <select
+                value={formData.experience}
+                onChange={(e) =>
+                  setFormData({ ...formData, experience: e.target.value })
+                }
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+              >
+                <option value="">Select your experience level</option>
+                <option value="None">No Experience</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
           </div>
 
           <div>
